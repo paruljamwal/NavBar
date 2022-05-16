@@ -4,6 +4,7 @@
     position: relative;
     top: 15%;
     border-radius:10px ;
+    flex: 1;
     cursor: pointer;
     color: white;
     background-color: rgb(9, 176, 242);

@@ -1,7 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
 import { Logo } from './Components/Logo/Logo';
-import { Links } from './Components/Links/Link';
 import { Contact } from './Components/Button/Contact';
 
 function App() {
@@ -13,11 +12,34 @@ function App() {
       
  
   }
+
+  let mid=["Services","Projects","About"]
+ 
   return (
     <div className="App">
     <div style={nav}>
     <Logo></Logo>
-      <Links></Links>
+
+    <div style={{
+           display:"flex" ,
+           flex:"1",
+           gap:" 5%",
+           marginTop:"15px"
+         }}>
+    {
+   
+   mid.map((e)=>(
+         <div >{e}</div>
+       
+     ))
+
+
+
+ 
+   }
+
+    </div>
+
       <Contact></Contact>
     </div>
     </div>
